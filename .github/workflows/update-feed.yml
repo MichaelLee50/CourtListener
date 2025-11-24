@@ -46,20 +46,20 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install requests
 
-- name: Build Atom feed for ${{ matrix.docket.title }}
-  env:
-    DOCKET_ID:     ${{ matrix.docket.id }}
-    DOCKET_SLUG:   ${{ matrix.docket.slug }}
-    FEED_SELF_URL: "https://michaellee50.github.io/CourtListener/${{ matrix.docket.file }}"
-    FEED_TITLE:    ${{ matrix.docket.title }}   # optional cosmetic override
-  run: |
-    python scripts/build_feed.py
-    # Only rename if the destination differs from feed.xml
-    if [ "${{ matrix.docket.file }}" != "feed.xml" ]; then
-      mv feed.xml "${{ matrix.docket.file }}"
-    else
-      echo "feed.xml already correct name; no rename needed."
-    fi
+      - name: Build Atom feed for ${{ matrix.docket.title }}
+        env:
+          DOCKET_ID:     ${{ matrix.docket.id }}
+          DOCKET_SLUG:   ${{ matrix.docket.slug }}
+          FEED_SELF_URL: "https://michaellee50.github.io/CourtListener/${{ matrix.docket.file }}"
+          FEED_TITLE:    ${{ matrix.docket.title }}   # optional cosmetic override
+        run: |
+          python scripts/build_feed.py
+          # Only rename if the destination differs from feed.xml
+          if [ "${{ matrix.docket.file }}" != "feed.xml" ]; then
+            mv feed.xml "${{ matrix.docket.file }}"
+          else
+            echo "feed.xml already correct name; no rename needed."
+          fi
 
       - name: Commit if changed (rebase to avoid conflicts)
         run: |
