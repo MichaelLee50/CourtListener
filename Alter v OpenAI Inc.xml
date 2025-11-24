@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>CourtListener Docket 68024915</title>
@@ -11,7 +10,7 @@
 
   <entry>
     <title>Entry #564 – Motion Filed</title>
-    <link href="https://www.courtlistener.com/docket"/>
+    <link href="https://www.courtlistener.com/feeds/"/>
     <id>tag:courtlistener.com,2025-11-24:/docket/68024915/entry564</id>
     <updated>2025-11-24T14:00:00Z</updated>
     <published>2025-11-24T14:00:00Z</published>
