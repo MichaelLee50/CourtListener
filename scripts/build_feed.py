@@ -77,7 +77,7 @@ def normalise_feed(xml_text):
         link_el.set("rel", "alternate")
 
     if feed_updated is None:
-        feed_updated = ET.SubElement(root, f"{{{ATOM_NS}}}updated")
+        feed_updated = ET.SubElement(root, f"{{{ATOM_NS}}}updated"
     feed_updated.text = newest or now_utc_iso()
 
     return ET.tostring(root, encoding="utf-8", xml_declaration=True)
