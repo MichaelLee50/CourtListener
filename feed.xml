@@ -1,0 +1,17 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Brunner v. Fenix Internet LLC</title>
+    <link>https://www.courtlistener.com/docket/69799401/brunner-v-fenix-internet-llc/</link>
+    <description>Docket updates from CourtListener</description>
+    <!-- Repeat for each entry -->
+    <item>
+      <title>Example Entry Title</title>
+      <link>https://www.courtlistener.com/docket/69799401/brunner-v-fenix-internet-llc/#entry</link>
+      <guid>https://www.courtlistener.com/docket/69799401/brunner-v-fenix-internet-llc/#entry</guid>
+      <description>Summary of the docket entry</description>
+      <pubDate>Fri, 21 Nov 2025 15:46:30 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
