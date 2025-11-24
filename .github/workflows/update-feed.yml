@@ -1,3 +1,4 @@
+
 name: Update Multiple CourtListener Feeds
 
 on:
@@ -13,12 +14,11 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-latest
 
-    # Run one-at-a-time to avoid git push races AND reduce site throttling
     strategy:
       max-parallel: 1
       matrix:
         docket:
-          # --- ORIGINAL (do not change: stays feed.xml already in Newsdesk) ---
+          # --- ORIGINAL (unchanged feed name for Newsdesk) ---
           - { id: "68024915", slug: "alter-v-openai-inc", file: "feed.xml", title: "Alter v. OpenAI, Inc." }
 
           # --- NEW SEPARATE FEEDS ---
@@ -26,45 +26,3 @@ jobs:
           - { id: "17131648", slug: "thomson-reuters-enterprise-centre-gmbh-v-ross-intelligence-inc", file: "feed-thomson-reuters-ross.xml", title: "Thomson Reuters v. ROSS Intelligence" }
           - { id: "67890942", slug: "huckabee-v-meta-platforms-inc", file: "feed-huckabee-meta.xml", title: "Huckabee v. Meta Platforms, Inc." }
           - { id: "67894459", slug: "concord-music-group-inc-v-anthropic-pbc", file: "feed-concord-anthropic.xml", title: "Concord Music Group v. Anthropic PBC" }
-          - { id: "68117049", slug: "the-new-york-times-company-v-microsoft-corporation", file: "feed-nyt-microsoft.xml", title: "NYT v. Microsoft Corporation" }
-          - { id: "68138737", slug: "basbanes-v-microsoft-corporation", file: "feed-basbanes-microsoft.xml", title: "Basbanes v. Microsoft Corporation" }
-          - { id: "67810584", slug: "authors-guild-v-openai-inc", file: "feed-authors-guild-openai.xml", title: "Authors Guild v. OpenAI, Inc." }
-          - { id: "67569326", slug: "kadrey-v-meta-platforms-inc", file: "feed-kadrey-meta.xml", title: "Kadrey v. Meta Platforms, Inc." }
-          - { id: "67778017", slug: "chabon-v-openai-inc", file: "feed-chabon-openai.xml", title: "Chabon v. OpenAI, Inc." }
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install requests
-
-      - name: Build Atom feed for ${{ matrix.docket.title }}
-        env:
-          DOCKET_ID:     ${{ matrix.docket.id }}
-          DOCKET_SLUG:   ${{ matrix.docket.slug }}
-          FEED_SELF_URL: "https://michaellee50.github.io/CourtListener/${{ matrix.docket.file }}"
-          FEED_TITLE:    ${{ matrix.docket.title }}   # optional cosmetic override
-        run: |
-          python scripts/build_feed.py
-          # Only rename if the destination differs from feed.xml
-          
-if [ "${{ matrix.docket.file }}" != "feed.xml" ]; then
-  mv feed.xml "${{ matrix.docket.file }}"
-else
-  echo "feed.xml already correct name; no rename needed."
-fi
-
-
- git stash --include-untracked
-git pull --rebase origin "${{ github.ref_name }}"
-git stash pop || true
-
-
