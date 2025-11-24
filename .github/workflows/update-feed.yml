@@ -61,14 +61,8 @@ jobs:
             echo "feed.xml already correct name; no rename needed."
           fi
 
-     - name: Commit if changed
-  run: |
-    if [[ -n "$(git status --porcelain)" ]]; then
-      git config user.name "github-actions[bot]"
-      git config user.email "github-actions[bot]@users.noreply.github.com"
-      git add "${{ matrix.docket.file }}"
-      git commit -m "Auto-update ${{ matrix.docket.file }}"
-      git push origin "${{ github.ref_name }}"
-    else
-      echo
+ git stash --include-untracked
+git pull --rebase origin "${{ github.ref_name }}"
+git stash pop || true
+
 
