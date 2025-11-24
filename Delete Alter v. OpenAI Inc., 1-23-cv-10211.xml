@@ -1,0 +1,34 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>CourtListener Docket 68024915</title>
+  <link href="https://www.courtlistener.com/docket/680  <updated>2025-11-24T14:45:00Z</updated>
+  <id>https://www.courtlistener.com/docket/68024915/</id>
+  <author>
+    <name>CourtListener</name>
+  </author>
+
+  <entry>
+    <title>Entry #564 – Motion Filed</title>
+    <link href="https://www.courtlistener.com/feeds/"/>
+    <id>tag:courtlistener.com,2025-11-24:/docket/68024915/entry564</id>
+    <updated>2025-11-24T14:00:00Z</updated>
+    <published>2025-11-24T14:00:00Z</published>
+    <summary>Motion for extension of time filed.</summary>
+  </entry>
+
+  <entry>
+    <title>Entry #563 – Order Issued</title>
+    <link href="https://www.courtlistener.com/docket/68024915id>tag:courtlistener.com,2025-11-23:/docket/68024915/entry563</id>
+    <updated>2025-11-23T10:30:00Z</updated>
+    <published>2025-11-23T10:30:00Z</published>
+    <summary>Order granting motion to compel discovery.</summary>
+  </entry>
+
+  <entry>
+    <title>Entry #562 – Hearing Scheduled</title>
+    <link href="https://www.courtlistener.com/docket/68024915/#entrycourtlistener.com,2025-11-22:/docket/68024915/entry562</id>
+    <updated>2025-11-22T09:15:00Z</updated>
+    <published>2025-11-22T09:15:00Z</published>
+    <summary>Hearing scheduled for December 5, 2025.</summary>
+  </entry>
