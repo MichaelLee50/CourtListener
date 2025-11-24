@@ -34,7 +34,7 @@ jobs:
         run: |
           python scripts/build_feed.py
 
-      - name: Commit if changed
+- name: Commit if changed
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
             git config user.name "github-actions[bot]"
@@ -44,3 +44,4 @@ jobs:
             git push
           else
             echo "No changes to commit."
+          fi
