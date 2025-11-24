@@ -1,3 +1,4 @@
+
 name: Update Multiple CourtListener Feeds
 
 on:
@@ -13,10 +14,12 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-latest
 
+    # Run one-at-a-time to avoid git push races AND reduce site throttling
     strategy:
+      max-parallel: 1
       matrix:
         docket:
-          # --- ORIGINAL (do not change: this remains feed.xml for Newsdesk) ---
+          # --- ORIGINAL (do not change: stays feed.xml already in Newsdesk) ---
           - { id: "68024915", slug: "alter-v-openai-inc", file: "feed.xml", title: "Alter v. OpenAI, Inc." }
 
           # --- NEW SEPARATE FEEDS ---
@@ -54,11 +57,13 @@ jobs:
           python scripts/build_feed.py
           mv feed.xml "${{ matrix.docket.file }}"
 
-      - name: Commit if changed
+      - name: Commit if changed (rebase to avoid conflicts)
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
+            git fetch origin
+            git pull --rebase origin "${{ github.ref_name }}"
             git add "${{ matrix.docket.file }}"
             git commit -m "Auto-update ${{ matrix.docket.file }}"
             git push
