@@ -1,37 +1,89 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>CourtListener Docket 68024915</title>
-  <link href="https://www.courtlistener.com/feeds/"/>
-  <updated>2025-11-24T14:45:00Z</updated>
-  <id>https://www.courtlistener.com/docket/68024915/</id>
-  <author>
-    <name>CourtListener</name>
-  </author>
-
-  <entry>
-    <title>Entry #564 – Motion Filed</title>
-    <link href="https://www.courtlistener.com/feeds/"/>
-    <id>tag:courtlistener.com,2025-11-24:/docket/68024915/entry564</id>
-    <updated>2025-11-24T14:00:00Z</updated>
-    <published>2025-11-24T14:00:00Z</published>
-    <summary>Motion for extension of time filed.</summary>
-  </entry>
-
-  <entry>
-    <title>Entry #563 – Order Issued</title>
-    <link href="https://www.courtlistener.com/feeds/"/>
-    <id>tag:courtlistener.com,2025-11-23:/docket/68024915/entry563</id>
-    <updated>2025-11-23T10:30:00Z</updated>
-    <published>2025-11-23T10:30:00Z</published>
-    <summary>Order granting motion to compel discovery.</summary>
-  </entry>
-
-  <entry>
-    <title>Entry #562 – Hearing Scheduled</title>
-    <link href="https://www.courtlistener.com/feeds/"/>
-    <id>tag:courtlistener.com,2025-11-22:/docket/68024915/entry562</id>
-    <updated>2025-11-22T09:15:00Z</updated>
-    <published>2025-11-22T09:15:00Z</published>
-    <summary>Hearing scheduled for December 5, 2025.</summary>
-  </entry>
+<title>CourtListener Docket 68024915</title>
+<link href="https://www.courtlistener.com/docket/68024915/"/>
+<updated>2025-11-24T16:49:35Z</updated>
+<id>https://www.courtlistener.com/docket/68024915/</id>
+<author>
+<name>CourtListener</name>
+</author>
+<entry>
+<title>Entry #564 – Sample Update</title>
+<link href="https://www.courtlistener.com/docket/68024915/#entry564"/>
+<id>tag:courtlistener.com,2025-11-24T16:49:35Z:/docket/68024915/entry564</id>
+<updated>2025-11-24T16:49:35Z</updated>
+<published>2025-11-24T16:49:35Z</published>
+<summary>Sample docket entry number 564.</summary>
+</entry>
+<entry>
+<title>Entry #563 – Sample Update</title>
+<link href="https://www.courtlistener.com/docket/68024915/#entry563"/>
+<id>tag:courtlistener.com,2025-11-23T16:49:35Z:/docket/68024915/entry563</id>
+<updated>2025-11-23T16:49:35Z</updated>
+<published>2025-11-23T16:49:35Z</published>
+<summary>Sample docket entry number 563.</summary>
+</entry>
+<entry>
+<title>Entry #562 – Sample Update</title>
+<link href="https://www.courtlistener.com/docket/68024915/#entry562"/>
+<id>tag:courtlistener.com,2025-11-22T16:49:35Z:/docket/68024915/entry562</id>
+<updated>2025-11-22T16:49:35Z</updated>
+<published>2025-11-22T16:49:35Z</published>
+<summary>Sample docket entry number 562.</summary>
+</entry>
+<entry>
+<title>Entry #561 – Sample Update</title>
+<link href="https://www.courtlistener.com/docket/68024915/#entry561"/>
+<id>tag:courtlistener.com,2025-11-21T16:49:35Z:/docket/68024915/entry561</id>
+<updated>2025-11-21T16:49:35Z</updated>
+<published>2025-11-21T16:49:35Z</published>
+<summary>Sample docket entry number 561.</summary>
+</entry>
+<entry>
+<title>Entry #560 – Sample Update</title>
+<link href="https://www.courtlistener.com/docket/68024915/#entry560"/>
+<id>tag:courtlistener.com,2025-11-20T16:49:35Z:/docket/68024915/entry560</id>
+<updated>2025-11-20T16:49:35Z</updated>
+<published>2025-11-20T16:49:35Z</published>
+<summary>Sample docket entry number 560.</summary>
+</entry>
+<entry>
+<title>Entry #559 – Sample Update</title>
+<link href="https://www.courtlistener.com/docket/68024915/#entry559"/>
+<id>tag:courtlistener.com,2025-11-19T16:49:35Z:/docket/68024915/entry559</id>
+<updated>2025-11-19T16:49:35Z</updated>
+<published>2025-11-19T16:49:35Z</published>
+<summary>Sample docket entry number 559.</summary>
+</entry>
+<entry>
+<title>Entry #558 – Sample Update</title>
+<link href="https://www.courtlistener.com/docket/68024915/#entry558"/>
+<id>tag:courtlistener.com,2025-11-18T16:49:35Z:/docket/68024915/entry558</id>
+<updated>2025-11-18T16:49:35Z</updated>
+<published>2025-11-18T16:49:35Z</published>
+<summary>Sample docket entry number 558.</summary>
+</entry>
+<entry>
+<title>Entry #557 – Sample Update</title>
+<link href="https://www.courtlistener.com/docket/68024915/#entry557"/>
+<id>tag:courtlistener.com,2025-11-17T16:49:35Z:/docket/68024915/entry557</id>
+<updated>2025-11-17T16:49:35Z</updated>
+<published>2025-11-17T16:49:35Z</published>
+<summary>Sample docket entry number 557.</summary>
+</entry>
+<entry>
+<title>Entry #556 – Sample Update</title>
+<link href="https://www.courtlistener.com/docket/68024915/#entry556"/>
+<id>tag:courtlistener.com,2025-11-16T16:49:35Z:/docket/68024915/entry556</id>
+<updated>2025-11-16T16:49:35Z</updated>
+<published>2025-11-16T16:49:35Z</published>
+<summary>Sample docket entry number 556.</summary>
+</entry>
+<entry>
+<title>Entry #555 – Sample Update</title>
+<link href="https://www.courtlistener.com/docket/68024915/#entry555"/>
+<id>tag:courtlistener.com,2025-11-15T16:49:35Z:/docket/68024915/entry555</id>
+<updated>2025-11-15T16:49:35Z</updated>
+<published>2025-11-15T16:49:35Z</published>
+<summary>Sample docket entry number 555.</summary>
+</entry>
 </feed>
