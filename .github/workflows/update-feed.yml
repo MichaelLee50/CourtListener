@@ -1,18 +1,35 @@
-
-name: Update CourtListener Feed
+name: Update Multiple CourtListener Feeds
 
 on:
-  workflow_dispatch: {}    # Enables manual runs
+  workflow_dispatch: {}
   schedule:
-    - cron: "15 7 * * *"   # Runs daily at 07:15 UTC
-    - cron: "15 13 * * *"  # Runs daily at 13:15 UTC
+    - cron: "15 7 * * *"   # daily 07:15 UTC
+    - cron: "15 13 * * *"  # daily 13:15 UTC
 
 permissions:
-  contents: write          # Needed to push feed.xml
+  contents: write
 
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        docket:
+          # --- ORIGINAL (do not change: this remains feed.xml for Newsdesk) ---
+          - { id: "68024915", slug: "alter-v-openai-inc", file: "feed.xml", title: "Alter v. OpenAI, Inc." }
+
+          # --- NEW SEPARATE FEEDS ---
+          - { id: "69950497", slug: "tremblay-v-openai-inc", file: "feed-tremblay.xml", title: "Tremblay v. OpenAI, Inc." }
+          - { id: "17131648", slug: "thomson-reuters-enterprise-centre-gmbh-v-ross-intelligence-inc", file: "feed-thomson-reuters-ross.xml", title: "Thomson Reuters v. ROSS Intelligence" }
+          - { id: "67890942", slug: "huckabee-v-meta-platforms-inc", file: "feed-huckabee-meta.xml", title: "Huckabee v. Meta Platforms, Inc." }
+          - { id: "67894459", slug: "concord-music-group-inc-v-anthropic-pbc", file: "feed-concord-anthropic.xml", title: "Concord Music Group v. Anthropic PBC" }
+          - { id: "68117049", slug: "the-new-york-times-company-v-microsoft-corporation", file: "feed-nyt-microsoft.xml", title: "NYT v. Microsoft Corporation" }
+          - { id: "68138737", slug: "basbanes-v-microsoft-corporation", file: "feed-basbanes-microsoft.xml", title: "Basbanes v. Microsoft Corporation" }
+          - { id: "67810584", slug: "authors-guild-v-openai-inc", file: "feed-authors-guild-openai.xml", title: "Authors Guild v. OpenAI, Inc." }
+          - { id: "67569326", slug: "kadrey-v-meta-platforms-inc", file: "feed-kadrey-meta.xml", title: "Kadrey v. Meta Platforms, Inc." }
+          - { id: "67778017", slug: "chabon-v-openai-inc", file: "feed-chabon-openai.xml", title: "Chabon v. OpenAI, Inc." }
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,21 +44,23 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install requests
 
-      - name: Build Atom feed
+      - name: Build Atom feed for ${{ matrix.docket.title }}
         env:
-          DOCKET_ID: "68024915"
-          DOCKET_SLUG: "alter-v-openai-inc"
-          FEED_SELF_URL: "https://michaellee50.github.io/CourtListener/feed.xml"
+          DOCKET_ID:     ${{ matrix.docket.id }}
+          DOCKET_SLUG:   ${{ matrix.docket.slug }}
+          FEED_SELF_URL: "https://michaellee50.github.io/CourtListener/${{ matrix.docket.file }}"
+          FEED_TITLE:    ${{ matrix.docket.title }}   # optional cosmetic override
         run: |
           python scripts/build_feed.py
+          mv feed.xml "${{ matrix.docket.file }}"
 
       - name: Commit if changed
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add feed.xml
-            git commit -m "Auto-update feed.xml"
+            git add "${{ matrix.docket.file }}"
+            git commit -m "Auto-update ${{ matrix.docket.file }}"
             git push
           else
             echo "No changes to commit."
