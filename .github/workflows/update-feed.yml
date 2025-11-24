@@ -55,11 +55,13 @@ jobs:
         run: |
           python scripts/build_feed.py
           # Only rename if the destination differs from feed.xml
-          if [ "${{ matrix.docket.file }}" != "feed.xml" ]; then
-            mv feed.xml "${{ matrix.docket.file }}"
-          else
-            echo "feed.xml already correct name; no rename needed."
-          fi
+          
+if [ "${{ matrix.docket.file }}" != "feed.xml" ]; then
+  mv feed.xml "${{ matrix.docket.file }}"
+else
+  echo "feed.xml already correct name; no rename needed."
+fi
+
 
  git stash --include-untracked
 git pull --rebase origin "${{ github.ref_name }}"
