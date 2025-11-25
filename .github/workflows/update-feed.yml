@@ -41,6 +41,7 @@ jobs:
           - { id: "69417248", slug: "Laborers-Local-235-Pension-Fund-v-Rentokil-Initial-PLC", file: "Laborers-Local-235-Pension-Fund-v-Rentokil-Initial.xml", title: "Laborers-Local-235-Pension-Fund-v-Rentokil-Initial" }
           - { id: "68990373", slug: "N.Z.-v-Fenix-International-Limited", file: "N.Z.-Fenix-International.xml", title: "N.Z. v. Fenix International Limited" }
           - { id: "68990373", slug: "McFadden-Fenix-Internet-LLC", file: "McFadden-Fenix Internet.xml", title: "McFadden-Fenix Internet" }
+          - { id: "68082231", slug: "IN-RE:-Glucagon-like-Peptide-1 Receptor-Agonists-(GLP-1-RAs)-Products-LiabilityLitigation-(MDL-No.-3094)", file: "MDL-No.-3094.xml", title: "IN RE: Glucagon-like Peptide-1 Receptor Agonists (GLP-1 RAs) Products Liability Litigation (MDL No. 3094)"}
 
 
     steps:
