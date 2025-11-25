@@ -31,17 +31,17 @@ jobs:
           - { id: "67810584", slug: "authors-guild-v-openai-inc", file: "feed-authors-guild-openai.xml", title: "Authors Guild v. OpenAI, Inc." }
           - { id: "67569326", slug: "kadrey-v-meta-platforms-inc", file: "feed-kadrey-meta.xml", title: "Kadrey v. Meta Platforms, Inc." }
           - { id: "67778017", slug: "chabon-v-openai-inc", file: "feed-chabon-openai.xml", title: "Chabon v. OpenAI, Inc." }
-          - { id: "64928140", slug: "Alvarez-Toledo-v-Tesla-inc", file: "Alvarez-Toledo-Tesla.xml", title: "Alvarez Toledo v. Tesla, Inc." }
-          - { id: "65347117", slug: "In-Re-Tesla-Advanced-Driver-Assistance-Systems-Litigation", file: "In-Re-Tesla-Advanced-Driver-Assistance-Systems-Litigation.xml", title: "IN RE TESLA ADVANCED DRIVER ASSISTANCE SYSTEMS LITIGATION" }
-          - { id: "69837833", slug: "Nyree-Hinton-v-Tesla-inc", file: "Nyree-Hinton-Tesla.xml", title: "Nyree Hinton Alvarez Toledo v. Tesla, Inc." }
-          - { id: "67660386", slug: "Porter-v-Tesla-inc", file: "Porter-Tesla.xml", title: "Porter v. Tesla, Inc." }
-          - { id: "68564538", slug: "Watkins-v-Musk", file: "Watkins-Musk.xml", title: "Watkins v. Musk" }
-          - { id: "71021491", slug: "Monrand-v-Tesla-inc", file: "Morand-Tesla.xml", title: "Monrand v. Tesla, Inc." }
-          - { id: "69799401", slug: "Brunner-v-Fenix-Internet-LLC", file: "Brunner-v-Fenix-Internet.xml", title: "Brunner v. Fenix Internet, LLC" }
-          - { id: "69417248", slug: "Laborers-Local-235-Pension-Fund-v-Rentokil-Initial-PLC", file: "Laborers-Local-235-Pension-Fund-v-Rentokil-Initial.xml", title: "Laborers-Local-235-Pension-Fund-v-Rentokil-Initial" }
-          - { id: "68990373", slug: "N.Z.-v-Fenix-International-Limited", file: "N.Z.-Fenix-International.xml", title: "N.Z. v. Fenix International Limited" }
-          - { id: "68990373", slug: "McFadden-Fenix-Internet-LLC", file: "McFadden-Fenix Internet.xml", title: "McFadden-Fenix Internet" }
-          - { id: "68082231", slug: "IN-RE:-Glucagon-like-Peptide-1 Receptor-Agonists-(GLP-1-RAs)-Products-LiabilityLitigation-(MDL-No.-3094)", file: "MDL-No.-3094.xml", title: "IN RE: Glucagon-like Peptide-1 Receptor Agonists (GLP-1 RAs) Products Liability Litigation (MDL No. 3094)"}
+          - { id: "64928140", slug: "Alvarez-Toledo-v-Tesla-inc", file: "feed-Alvarez-Toledo-Tesla.xml", title: "Alvarez Toledo v. Tesla, Inc." }
+          - { id: "65347117", slug: "In-Re-Tesla-Advanced-Driver-Assistance-Systems-Litigation", file: "feed-In-Re-Tesla-Advanced-Driver-Assistance-Systems-Litigation.xml", title: "IN RE TESLA ADVANCED DRIVER ASSISTANCE SYSTEMS LITIGATION" }
+          - { id: "69837833", slug: "Nyree-Hinton-v-Tesla-inc", file: "feed-Nyree-Hinton-Tesla.xml", title: "Nyree Hinton Alvarez Toledo v. Tesla, Inc." }
+          - { id: "67660386", slug: "Porter-v-Tesla-inc", file: "feed-Porter-Tesla.xml", title: "Porter v. Tesla, Inc." }
+          - { id: "68564538", slug: "Watkins-v-Musk", file: "feed-Watkins-Musk.xml", title: "Watkins v. Musk" }
+          - { id: "71021491", slug: "Monrand-v-Tesla-inc", file: "feed-Morand-Tesla.xml", title: "Monrand v. Tesla, Inc." }
+          - { id: "69799401", slug: "Brunner-v-Fenix-Internet-LLC", file: "feed-Brunner-v-Fenix-Internet.xml", title: "Brunner v. Fenix Internet, LLC" }
+          - { id: "69417248", slug: "Laborers-Local-235-Pension-Fund-v-Rentokil-Initial-PLC", file: "feed-Laborers-Local-235-Pension-Fund-v-Rentokil-Initial.xml", title: "Laborers-Local-235-Pension-Fund-v-Rentokil-Initial" }
+          - { id: "68990373", slug: "N.Z.-v-Fenix-International-Limited", file: "feed-N.Z.-Fenix-International.xml", title: "N.Z. v. Fenix International Limited" }
+          - { id: "68990373", slug: "McFadden-Fenix-Internet-LLC", file: "feed-McFadden-Fenix Internet.xml", title: "McFadden-Fenix Internet" }
+          - { id: "68082231", slug: "IN-RE:-Glucagon-like-Peptide-1 Receptor-Agonists-(GLP-1-RAs)-Products-LiabilityLitigation-(MDL-No.-3094)", file: "feed-MDL-No.-3094.xml", title: "IN RE: Glucagon-like Peptide-1 Receptor Agonists (GLP-1 RAs) Products Liability Litigation (MDL No. 3094)"}
 
 
     steps:
