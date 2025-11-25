@@ -40,7 +40,7 @@ jobs:
           - { id: "69799401", slug: "Brunner-v-Fenix-Internet-LLC", file: "feed-Brunner-v-Fenix-Internet.xml", title: "Brunner v. Fenix Internet, LLC" }
           - { id: "69417248", slug: "Laborers-Local-235-Pension-Fund-v-Rentokil-Initial-PLC", file: "feed-Laborers-Local-235-Pension-Fund-v-Rentokil-Initial.xml", title: "Laborers-Local-235-Pension-Fund-v-Rentokil-Initial" }
           - { id: "68990373", slug: "N.Z.-v-Fenix-International-Limited", file: "feed-N.Z.-Fenix-International.xml", title: "N.Z. v. Fenix International Limited" }
-          - { id: "68990373", slug: "McFadden-Fenix-Internet-LLC", file: "feed-McFadden-Fenix Internet.xml", title: "McFadden-Fenix Internet" }
+          - { id: "67731727", slug: "McFadden-Fenix-Internet-LLC", file: "feed-McFadden-Fenix Internet.xml", title: "McFadden-Fenix Internet" }
           - { id: "68082231", slug: "IN-RE:-Glucagon-like-Peptide-1 Receptor-Agonists-(GLP-1-RAs)-Products-LiabilityLitigation-(MDL-No.-3094)", file: "feed-MDL-No.-3094.xml", title: "IN RE: Glucagon-like Peptide-1 Receptor Agonists (GLP-1 RAs) Products Liability Litigation (MDL No. 3094)"}
 
 
