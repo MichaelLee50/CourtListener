@@ -37,6 +37,11 @@ jobs:
           - { id: "67660386", slug: "Porter-v-Tesla-inc", file: "Porter-Tesla.xml", title: "Porter v. Tesla, Inc." }
           - { id: "68564538", slug: "Watkins-v-Musk", file: "Watkins-Musk.xml", title: "Watkins v. Musk" }
           - { id: "71021491", slug: "Monrand-v-Tesla-inc", file: "Morand-Tesla.xml", title: "Monrand v. Tesla, Inc." }
+          - { id: "69799401", slug: "Brunner-v-Fenix-Internet-LLC", file: "Brunner-v-Fenix-Internet.xml", title: "Brunner v. Fenix Internet, LLC" }
+          - { id: "69417248", slug: "Laborers-Local-235-Pension-Fund-v-Rentokil-Initial-PLC", file: "Laborers-Local-235-Pension-Fund-v-Rentokil-Initial.xml", title: "Laborers-Local-235-Pension-Fund-v-Rentokil-Initial" }
+          - { id: "68990373", slug: "N.Z.-v-Fenix-International-Limited", file: "N.Z.-Fenix-International.xml", title: "N.Z. v. Fenix International Limited" }
+          - { id: "68990373", slug: "McFadden-Fenix-Internet-LLC", file: "McFadden-Fenix Internet.xml", title: "McFadden-Fenix Internet" }
+
 
     steps:
       - name: Checkout
