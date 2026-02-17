@@ -45,6 +45,7 @@ jobs:
           - { id: "71191818", slug: "X Corp.-v.-Apple-Inc.", file: "feed-X-Corp-v-Apple.xml", title: "X Corp. v. Apple Inc." }
           - { id: "68478356", slug: "DORIN-v.-EXSCIENTIA-P.L.C.", file: "feed-dorin-exscientia.xml", title: "DORIN v. EXSCIENTIA P.L.C." }
           - { id: "71945280", slug: "Dennis-v.-Tesla-Inc", file: "feed-dennis-tesla.xml", title: "Dennis v. Tesla Inc" }
+          - { id: "72280905", slug: "Hyde-v.-Tesla-Inc", file: "feed-hyde-tesla.xml", title: "Hyde v. Tesla Inc" }
 
     steps:
       - name: Checkout
