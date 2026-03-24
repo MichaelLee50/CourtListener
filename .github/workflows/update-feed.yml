@@ -47,7 +47,9 @@ jobs:
           - { id: "71945280", slug: "Dennis-v.-Tesla-Inc", file: "feed-dennis-tesla.xml", title: "Dennis v. Tesla Inc" }
           - { id: "72280905", slug: "Hyde-v.-Tesla-Inc", file: "feed-hyde-tesla.xml", title: "Hyde v. Tesla Inc" }
           - { id: "72179920", slug: "People-of-the-State-of-Michigan-v.-BP-PLC", file: "feed-Michigan-BP.xml", title: "People of the State of Michigan v. BP PLC" }
-
+          - { id: "72082752", slug: "Blaine-v.-Tesla-Inc", file: "feed-Blaine-Tesla.xml", title: "Blaine v. Tesla Inc" }
+          - { id: "71979146", slug: "Maddi-v.-Tesla-Inc", file: "feed-Maddi-Tesla.xml", title: "Maddi v. Tesla Inc" }
+          
     steps:
       - name: Checkout
         uses: actions/checkout@v4
