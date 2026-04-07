@@ -50,7 +50,8 @@ jobs:
           - { id: "72082752", slug: "Blaine-v.-Tesla-Inc", file: "feed-Blaine-Tesla.xml", title: "Blaine v. Tesla Inc" }
           - { id: "71979146", slug: "Maddi-v.-Tesla-Inc", file: "feed-Maddi-Tesla.xml", title: "Maddi v. Tesla Inc" }
           - { id: "69437572", slug: "Mendoza-v.-Tesla-Inc", file: "feed-Mendoza-Tesla.xml", title: "Mendoza v. Tesla Inc" }
-          - { id: "72234063", slug: "Tremblett-v.-Tesla-Inc", file: "feed-Tremblett-Tesla.xml", title: "Tremblett v. Tesla Inc" }          
+          - { id: "72234063", slug: "Tremblett-v.-Tesla-Inc", file: "feed-Tremblett-Tesla.xml", title: "Tremblett v. Tesla Inc" }     
+          - { id: "73132850", slug: "Herring-v.-Tesla-Inc", file: "feed-Herring-Tesla.xml", title: "Herring v. Tesla Inc" }     
           - { id: "64871092", slug: "IN-RE:-Social-Media-Adolescent-Addiction/Personal-Injury-Products-Liability-Litigation-(MDL-No.-3047)", file: "feed-Social-Media-Adolescent-Addiction.xml", title: "IN RE: Social Media Adolescent Addiction/Personal Injury Products Liability Litigation (MDL No. 3047)" }
           
     steps:
