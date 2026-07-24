@@ -58,6 +58,7 @@ jobs:
           - { id: "73154016", slug: "Ganan-v.-LinkedIn-Corporation", file: "feed-Ganan-LinkedIn.xml", title: "Ganan v. LinkedIn Corporation" }   
           - { id: "73152752", slug: "Farrell-v.-LinkedIn-Corporation", file: "feed-Farrell-LinkedIn.xml", title: "Farrell v. LinkedIn Corporation" }   
           - { id: "62592046", slug: "Crowder-v.-LinkedIn-Corporation", file: "feed-Crowder-LinkedIn.xml", title: "Crowder v. LinkedIn Corporation" }   
+          - { id: "73440164", slug: "Waller-v.-Tesla-Inc", file: "feed-Waller-Tesla.xml", title: "Waller v. Tesla Inc" } 
     
     steps:
       - name: Checkout
