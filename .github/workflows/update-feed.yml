@@ -60,6 +60,9 @@ jobs:
           - { id: "62592046", slug: "Crowder-v.-LinkedIn-Corporation", file: "feed-Crowder-LinkedIn.xml", title: "Crowder v. LinkedIn Corporation" }   
           - { id: "73440164", slug: "Waller-v.-Tesla-Inc", file: "feed-Waller-Tesla.xml", title: "Waller v. Tesla Inc" } 
           - { id: "71180241", slug: "Tina-Barrales-v.-L'Oreal USA-Inc", file: "feed-Tina-Barrales-L'Oreal.xml", title: "Tina Barrales v. L'Oreal USA Inc" } 
+          - { id: "71251415", slug: "Fahey-v.-Sun-Bum-LLC", file: "feed-Fahey-Sun-Bun.xml", title: "Fahey v. Sun Bum LLC" }  
+          - { id: "72089192", slug: "Krasnova-v.-Clinique-Laboratories-LLC", file: "feed-Krasnova-Clinique.xml", title: "Krasnova v. Clinique Laboratories LLC" } 
+          
 
           
     
